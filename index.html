@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
-  </head>
-  <body>
-    <h1>覺得厲害</h1>
-  </body>
+
+<head>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=2.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"
+		charset="utf-8">
+	<title>prsk_倍率計算器</title>
+
+</head>
+
+<body>
+	<div class="row">
+		<div class="col-xs-6 col-sm-4">
+
+			<h2 style="font-size: 80; font-weight: 600; margin-bottom: 20; color: grey;">倍率計算器</h2>
+			<!-- 倍率輸入框 -->
+			<input class="input-bar" id="input" type="text" value size="20" placeholder=" 例如：120,110,110,110,110 ">
+			<br />
+			<!-- 計算按鈕 -->
+			<input class="btn" type="submit" value="計算" onclick="calculate();">
+			<br />
+			<!-- 這裡是一個按鈕在按下時，會呼叫calculate()這個函數。 -->
+			<output class="output-bar" id="output" type="text" name="mag" placeholder="倍率輸出"></output>
+
+		</div>
+	</div>
+	<script src="calculator.js"></script>
+</body>
+
 </html>
